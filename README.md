@@ -40,3 +40,20 @@ bash scripts/verify_notebooklm.sh
 ## Docs
 
 - MVP doc: `docs/NOTEBOOKLM_OPENCLAW_MVP.md`
+- Cookie extraction: `docs/COOKIE_EXTRACTION.md`
+
+## OpenClaw skill install note
+
+If OpenClaw was installed in a non-default location, make sure the skill
+directory exists before running the setup scripts. The scripts create
+`~/.openclaw/workspace/skills` to avoid interactive prompts.
+
+## Cookie extraction (local machine)
+
+1) Go to `https://notebooklm.google.com` and log in.
+2) Open DevTools (F12 or Cmd+Option+I).
+3) Open the Network tab and filter by `batchexecute`.
+4) Trigger any request (click a notebook).
+5) Open a `batchexecute` request and find `cookie:` in Request Headers.
+6) Copy only the value after `cookie:`.
+7) Save it to `~/.notebooklm/cookies.txt` on the VPS.
