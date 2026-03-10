@@ -49,6 +49,15 @@ directory exists before running the setup scripts. The scripts create both
 `~/.openclaw/skills` and `~/.openclaw/workspace/skills` to avoid interactive
 prompts.
 
+## Exec permission note
+
+The setup scripts add `group:runtime` to OpenClaw tools allowlist and restrict
+exec to `nlm` only. They do not overwrite existing tool settings. Restart the
+gateway after running the script.
+
+If the NotebookLM skill is already installed, the scripts skip reinstall to
+avoid interactive prompts.
+
 ## Cookie extraction (local machine)
 
 1) Go to `https://notebooklm.google.com` and log in.
