@@ -16,6 +16,7 @@ fi
 
 nlm login --manual --file "$COOKIES_FILE"
 nlm login --check
+mkdir -p "$HOME/.openclaw/skills"
 mkdir -p "$HOME/.openclaw/workspace/skills"
 nlm skill install openclaw
 nlm notebook list

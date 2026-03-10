@@ -45,8 +45,9 @@ bash scripts/verify_notebooklm.sh
 ## OpenClaw skill install note
 
 If OpenClaw was installed in a non-default location, make sure the skill
-directory exists before running the setup scripts. The scripts create
-`~/.openclaw/workspace/skills` to avoid interactive prompts.
+directory exists before running the setup scripts. The scripts create both
+`~/.openclaw/skills` and `~/.openclaw/workspace/skills` to avoid interactive
+prompts.
 
 ## Cookie extraction (local machine)
 

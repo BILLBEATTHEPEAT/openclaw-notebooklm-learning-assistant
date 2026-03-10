@@ -15,5 +15,6 @@ if [ ! -f "$COOKIES_FILE" ]; then
 fi
 
 nlm login --manual --file "$COOKIES_FILE"
+mkdir -p "$HOME/.openclaw/skills"
 mkdir -p "$HOME/.openclaw/workspace/skills"
 nlm skill install openclaw
