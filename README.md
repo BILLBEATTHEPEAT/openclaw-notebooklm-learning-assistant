@@ -8,16 +8,27 @@ overviews.
 ## What this repo contains
 
 - `docs/NOTEBOOKLM_OPENCLAW_MVP.md` - product and technical MVP plan
+- `scripts/bootstrap_notebooklm.sh` - one-shot VPS setup + verification
 - `scripts/setup_notebooklm.sh` - install + auth + skill install on a VPS
 - `scripts/verify_notebooklm.sh` - sanity checks after setup
 
 ## Quick start (VPS)
 
-1) Put your NotebookLM cookies into `cookies.txt` (see docs).
-2) Run the setup script:
+1) Put your NotebookLM cookies into `~/.notebooklm/cookies.txt` (see docs).
+2) Run one of the setup options:
+
+Option A: curl | bash
 
 ```bash
-bash scripts/setup_notebooklm.sh
+curl -fsSL https://raw.githubusercontent.com/BILLBEATTHEPEAT/openclaw-notebooklm-learning-assistant/main/scripts/bootstrap_notebooklm.sh | bash
+```
+
+Option B: git clone
+
+```bash
+git clone https://github.com/BILLBEATTHEPEAT/openclaw-notebooklm-learning-assistant.git
+cd openclaw-notebooklm-learning-assistant
+bash scripts/bootstrap_notebooklm.sh
 ```
 
 3) Verify:
