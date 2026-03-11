@@ -11,6 +11,7 @@ overviews.
 - `scripts/bootstrap_notebooklm.sh` - one-shot VPS setup + verification
 - `scripts/setup_notebooklm.sh` - install + auth + skill install on a VPS
 - `scripts/verify_notebooklm.sh` - sanity checks after setup
+- `skills/recite-flow/SKILL.md` - one-line recitation flow skill
 
 ## Quick start (VPS)
 
@@ -57,6 +58,16 @@ gateway after running the script.
 
 If the NotebookLM skill is already installed, the scripts skip reinstall to
 avoid interactive prompts.
+
+## Recitation command
+
+After setup and gateway restart, use the one-line command in Discord/WhatsApp:
+
+```
+/recite "<notebook name or id>" length:short
+```
+
+Length options: `short`, `medium` (default), `long`.
 
 ## Cookie extraction (local machine)
 
