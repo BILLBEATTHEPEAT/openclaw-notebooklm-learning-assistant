@@ -12,6 +12,8 @@ overviews.
 - `scripts/setup_notebooklm.sh` - install + auth + skill install on a VPS
 - `scripts/verify_notebooklm.sh` - sanity checks after setup
 - `skills/recite-flow/SKILL.md` - one-line recitation flow skill
+- `skills/review-flow/SKILL.md` - one-line review flow skill
+- `skills/drill-flow/SKILL.md` - one-line drill flow skill
 
 ## Quick start (VPS)
 
@@ -65,6 +67,15 @@ After setup and gateway restart, use the one-line command in Discord/WhatsApp:
 
 ```
 /recite "<notebook name or id>" length:short
+```
+
+Length options: `short`, `medium` (default), `long`.
+
+## Review and drill commands
+
+```
+/review "<notebook name or id>" length:short
+/drill "<notebook name or id>" length:long
 ```
 
 Length options: `short`, `medium` (default), `long`.
